@@ -1,0 +1,29 @@
+page-details {
+  #goButton {
+    float: right;
+    margin-top: 5px !important;
+    background-color: blue;
+  }
+
+
+
+  #callButton {
+    float: left;
+    width: 50%;
+    background-color: black;
+    color: white;
+    position: absolute;
+
+  }
+
+  #mailButton {
+    float: right;
+    width: 50%;
+    background-color: blue;
+    color: white;
+  }
+
+  #search {
+    background-color: orange;
+  }
+}

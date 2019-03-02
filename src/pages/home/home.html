@@ -5,14 +5,21 @@
     </button>
     <ion-title>Home</ion-title>
   </ion-navbar>
+<ion-searchbar id="search"></ion-searchbar>
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
 
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
+  <ion-list inset>
+    <ion-item *ngFor="let item of my_data" (click)="goToDetailsPage('' + item.id, ''+ item.userId)">
+      <ion-thumbnail style="float: left">
+        <img src="" />
+      </ion-thumbnail>
+      <h4><b>{{item.title | uppercase}}</b></h4>
+      <p>{{item.body}}</p>
 
-  <button ion-button secondary menuToggle>Toggle Menu</button>
+    </ion-item>
+  </ion-list>
+
+
 </ion-content>
